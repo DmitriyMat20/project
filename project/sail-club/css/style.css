@@ -125,10 +125,17 @@ cite {
 .news figcaption {
   font-size: 16px;
   line-height: 19px;
-  align-items: center;
   color: #8693A4;
 }
-
+.news figcaption {
+  display: flex;
+  list-style: none;
+  /*align-items: center;*/
+  margin: 0;
+  padding: 0;
+  margin-top: 17px;
+  /*padding-top: 17px;*/
+}
 
 
 
@@ -144,40 +151,54 @@ cite {
   padding: 20px 55px;
 }
 .logo {
-  margin: 0;
   width: 64px;
+  height: 68px;
+  margin-right: 471px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .main-nav {
   display: flex;
-}
-.main-nav .logo {
-  margin-right: 471px;
+  align-items: center;
 }
 .main-navigation {
   list-style: none;
-  width: 486px;
+  width: 559px;
   margin: 0;
-  margin-left: 0;
   margin-right: 40px;
-  
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.main-navigation li {
+  margin-right: 30px;
+}
+.main-navigation li:last-child {
+margin-right: 0;
 }
 .personal-account {
-  margin: 0;
+  margin-right: auto;
+  width: 36px;
+  height: 36px;
+  
 }
-
 .main-content {
   width: 1170px;
   margin: 0 auto;
   padding: 0 55px;
 }
 .block-hero {
+  display: flex;
+  flex-wrap: wrap;
   width: 1170px;
   margin-bottom: 120px;
   padding: 0;
 }
 .block-hero h1 {
   margin: 0;
+  padding: 0;
   margin-bottom: 40px;
+  margin-left: 70px;
 }
 .block-article-1 {
   width: 1030px;
@@ -193,6 +214,11 @@ cite {
 .block-article-1 h2 {
   margin: 0;
   margin-bottom: 35px;
+  text-decoration-color: #00C6BD;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px solid;
+  text-underline-position: under;
 }
 .block-article-2 {
   width: 1030px;
@@ -203,12 +229,18 @@ cite {
 }
 .block-article-2 p {
   margin: 0;
+  margin-right: auto;
   margin-bottom: 10px;
 }
 .block-article-2 h2 {
+  text-align: right;
   margin: 0;
   margin-bottom: 35px;
-
+  border-color:#00C6BD;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px solid;
+  text-underline-position: under;
 }
 .block-article-2 img {
   order: -1;
@@ -220,14 +252,20 @@ cite {
 }
 figure {
   margin: 0;
+  padding: 0;
+
   width: 770px;
-  
 }
 
 .news h2 {
   margin: 0;
   margin-bottom: 55px;
   text-align: center;
+  text-decoration-color: #00C6BD;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px solid;
+  text-underline-position: under;
 }
 .news-photo {
   margin: 0;
@@ -255,6 +293,11 @@ figure {
 .block-contacts h2 {
   margin: 0;
   margin-bottom: 35px;
+  text-decoration-color: #00C6BD;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px solid;
+  text-underline-position: under;
 }
 
 
@@ -307,13 +350,20 @@ figure {
   width: 1170px;
 }
 .gallery h2 {
+  display: flex;
+  width: 91px;
   font-size: 24px;
   line-height: 34px;
   font-weight: 700;
-  align-items: center;
   margin: 0;
+  margin-left: 540px;
   margin-bottom: 55px;
-  text-align: center;
+  /*подчеркивание*/
+  text-decoration-color: #00C6BD;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px solid;
+  text-underline-position: under;
 }
 .gallery-container {
   display: flex;
@@ -322,15 +372,34 @@ figure {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 170px;
 }
 .gallery-img-promo {
   margin-right: 30px;
   width: 970px;
 }
 .gallery-img {
+  margin: 0;
+  padding: 0;
+  height: 150px;
   margin-bottom: 30px;
   width: 170px;
 }
-.gallery-img-last{
+.gallery-img:last-child {
   margin-bottom: 0;
+}
+/*надо закончить*/
+.news-artem {
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-artem-img {
+  margin: 0;
+  padding: 0;
+}
+.news-artem time {
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  margin-left: 15px;
 }
